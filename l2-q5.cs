@@ -6,20 +6,20 @@ public class Program {
     string tudo = Console.ReadLine();
     string[] valores = tudo.Split(':');
 
-    int segundos = int.Parse(valores[2]);
+    double segundos = double.Parse(valores[2]);
     Console.WriteLine(segundos);
     
-    int minutos = 60*(int.Parse(valores[1]));
+    double minutos = 60*(double.Parse(valores[1]));
     Console.WriteLine(minutos);
     
-    int horas = 3600*(int.Parse(valores[0]));
+    double horas = 3600*(double.Parse(valores[0]));
     Console.WriteLine(horas);
     
 
-    int total = segundos+minutos+horas;
+    double total = segundos+minutos+horas;
     Console.WriteLine(total);
 
-    int dist = total*300000;
+    double dist = total*300000;
     Console.WriteLine(dist);
     
 
